@@ -219,6 +219,7 @@ version :=                 {
                              "service": "RHOAM",
                              "serviceType": "addon",
                              "version": "1.7.0",
+                             "next":["1.7.1"],
                              "serviceImpacting": false,
                              "criticalSecurityUpgrade": false,
                              "requirements": {
@@ -226,3 +227,61 @@ version :=                 {
                              },
                              "status": "active"
                            }
+
+
+cisVersions := [
+                  {
+                     "apiVersion":"hive.openshift.io/v1",
+                     "kind":"ClusterImageSet",
+                     "metadata":{
+                        "annotations":{
+                           "api.openshift.com/available-upgrades":"[\"1.7.1\"]",
+                           "api.openshift.com/version":"1.6.0"
+                        },
+                        "labels":{
+                           "api.openshift.com/channel-group":"stable",
+                           "api.openshift.com/enabled":"true"
+                        },
+                        "name":"RHOAM-v1.6.0"
+                     },
+                     "spec":{
+                        "releaseImage":"quay.io/appsre/rhoam@sha256:63545e67cc2af126e289de269ad59940e072af68f4f0cb9c37734f5374afeb60"
+                     }
+                  },
+                  {
+                     "apiVersion":"hive.openshift.io/v1",
+                     "kind":"ClusterImageSet",
+                     "metadata":{
+                        "annotations":{
+                           "api.openshift.com/available-upgrades":"[\"1.7.1\"]",
+                           "api.openshift.com/version":"1.7.0"
+                        },
+                        "labels":{
+                           "api.openshift.com/channel-group":"stable",
+                           "api.openshift.com/enabled":"true"
+                        },
+                        "name":"RHOAM-v1.7.0"
+                     },
+                     "spec":{
+                        "releaseImage":"quay.io/appsre/rhoam@sha256:63545e67cc2af126e289de269ad59940e072af68f4f0cb9c37734f5374afeb62"
+                     }
+                  },
+                  {
+                     "apiVersion":"hive.openshift.io/v1",
+                     "kind":"ClusterImageSet",
+                     "metadata":{
+                        "annotations":{
+                           "api.openshift.com/available-upgrades":"[]",
+                           "api.openshift.com/version":"1.7.1"
+                        },
+                        "labels":{
+                           "api.openshift.com/channel-group":"stable",
+                           "api.openshift.com/enabled":"true"
+                        },
+                        "name":"RHOAM-v1.7.1"
+                     },
+                     "spec":{
+                        "releaseImage":"quay.io/appsre/rhoam@sha256:63545e67cc2af126e289de269ad59940e072af68f4f0cb9c37734f5374afeb62"
+                     }
+                  }
+               ]

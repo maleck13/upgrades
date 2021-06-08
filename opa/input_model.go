@@ -41,5 +41,5 @@ type FleetMember struct {
 }
 
 func (f *FleetMember)String()string{
-	return fmt.Sprintf("risk %v",f.Risk)
+	return fmt.Sprintf("risk %v-cid %v",f.Risk, f.Clusterid)
 }

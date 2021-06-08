@@ -121,7 +121,8 @@ func buildRolloutGroups(fleetVersion *FleetVersion)([][]*FleetMember, error)  {
 		}
 		// convert total to an int as it is now a whole number
 		totalIndex := int(total)
-		// take of the first n (percentage) in the list and add to the group
+		fmt.Println("total index" , totalIndex)
+		// take off the first n (percentage) in the list and add to the group
 		groups = append(groups,fleet[0:totalIndex])
 		// remove the grouped members from the fleet
 		fleet = append(fleet[:totalIndex-1],fleet[totalIndex:]...)
