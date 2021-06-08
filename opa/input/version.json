@@ -1,0 +1,11 @@
+{
+  "service": "RHOAM",
+  "serviceType": "addon",
+  "version": "1.7.0",
+  "serviceImpacting": false,
+  "criticalSecurityUpgrade": false,
+  "requirements": {
+    "platformVersion": ">=4.7.4"
+  },
+  "status": "available"
+}

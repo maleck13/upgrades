@@ -1,0 +1,34 @@
+{
+    "name": "RHOAM",
+    "customerImpacting": false,
+    "criticalSecurityUpdate": true,
+    "version": "1.7",
+    "requirements": {
+      "resources": {
+        "totalCores": 18,
+        "totalRAMGB": 36,
+        "totalStorageGB": 150,
+        "increaseCores": 1,
+        "increaseRAMGB": 10,
+        "increaseStorageGB": 0
+      },
+      "cloudProvider": "AWS",
+      "serviceDependencies": [
+        {
+          "name": "observability",
+          "version": "1.3.0",
+          "operator": ">="
+        },
+        {
+          "name": "ocp",
+          "version": "4.7.1",
+          "operator": ">="
+        },
+        {
+          "name": "rhoam",
+          "version": "1.6.0",
+          "operator": "=="
+        }
+      ]
+    }
+  }

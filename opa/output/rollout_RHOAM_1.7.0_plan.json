@@ -1,0 +1,128 @@
+[
+ [
+  {
+   "clusterID": "1",
+   "risk": 7,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "3",
+   "risk": 7,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  }
+ ],
+ [
+  {
+   "clusterID": "1",
+   "risk": 7,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "3",
+   "risk": 7,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "6",
+   "risk": 6,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "5",
+   "risk": 6,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "10",
+   "risk": 5,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "11",
+   "risk": 5,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  },
+  {
+   "clusterID": "9",
+   "risk": 5,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  }
+ ],
+ [
+  {
+   "clusterID": "1",
+   "risk": 7,
+   "services": [
+    {
+     "name": "RHOAM",
+     "version": "1.6.0",
+     "upgradeStatus": ""
+    }
+   ],
+   "upgradePolicy": "automatic"
+  }
+ ]
+]
