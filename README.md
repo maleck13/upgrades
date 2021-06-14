@@ -69,7 +69,7 @@ Data Model:
 
 Fleet Member And Versions [fleet member and versions](opa/repl/json_data/fleet_member_versions.json)
 
-Full Fleet and a Version [fleet and a version](opa/repl/json_data/fleet_member_versions.json)
+Full Fleet and a Version [fleet and a version](opa/repl/json_data/fleet_version.json)
 
 Fleet Member and Version [fleet member and version](opa/repl/json_data/fleet_member_version.json) 
 
