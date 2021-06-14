@@ -11,11 +11,10 @@ investigations into managed upgrades
 Very basic look at integrating OPA with Go and also attempts at defining polices 
 
 
-TODO
+Remaining TODO
 
 - look at adding custom functions 
-- look at integrating with OPA as external server
-- flesh out some more polices
+- flesh out some more advanced polices
 
 
 This is a toy project to investigate leveraging OPA as a policy engine for driving upgrade decisions.
@@ -32,18 +31,18 @@ The risk setting is something that would be controlled by an SRE team
 
 Main policies 
 
-###Rollout Policy
+### Rollout Policy
 takes a version and a fleet and defines how a particular version should be rolled out. The policy defines a rollout plan.
 A rollout plan defines a set of groups to receive the upgrade and the threshold at which the group is considered successfully upgraded.
 A rollout plan could be as simple as a single group with the entire fleet in it. Or more complex groups based on a risk property
 
  
-###Eligibility Policy
+### Eligibility Policy
 Takes a fleet member and a version and decides if that fleet member is eligible to be upgraded at this point in time. This policy
 would be checked with data that is as upto date as possible, ideally in response to a "should I upgrade call". 
 
 
-##Try It
+## Try It
 
 1) Install OPA 
 
