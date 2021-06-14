@@ -88,7 +88,7 @@ curl localhost:8181/v1/data/upgrade/someservice/rolloutPlan -d @./opa/repl/json_
 
 
 - Check if a fleet member is eligible for a version
-
+`
 curl localhost:8181/v1/data/upgrade/someservice/eligibleForUpgrade -d @./opa/repl/json_data/fleet_member_version.json -H 'Content-Type: application/json' | jq`
 `
 
