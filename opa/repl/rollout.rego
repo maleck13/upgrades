@@ -5,18 +5,73 @@ import input.fleetMember
 import input.fleet
 import input.version
 
-# looks at the version the member is on finds that version and looks at the next field return that version
-availableVersionForFleetMember = vers  {
-   some j,i,k
-   # versions is a list of versions for the service
-   v := versions[i]
+
+impacting[v]{
+	versions[i].serviceImpacting == true
+    v = versions[i]
+}
+
+non_impacting[v]{
+	versions[i].serviceImpacting == false
+    v = versions[i]
+}
+
+currentVersion = v{
+   some i,j
+   vers := versions[i]
    # check the fleet member has the service running
-   fleetMember.services[j].name == v.service
-   # find the version they are currently on
-   v.version == fleetMember.services[j].version
-   # find the next version for them by looking at the latest version in the next array assumes its the last one
-   v.next[count(v.next)-1] == versions[k].version
-   vers = versions[k]
+   fleetMember.services[j].name == vers.service
+   fleetMember.services[j].version == vers.version
+   v :={
+      "version": vers,
+      "index": i
+   }
+}
+
+next = v{
+   cv = currentVersion
+   vers = versions[i]
+   vers.version == cv.version.next[count(cv.version.next)-1]
+    v :={
+      "version": vers,
+      "index": i
+   }
+}
+
+
+inbetween = v{
+  cv = currentVersion
+  n = next
+  v = array.slice(versions,cv.index+1,n.index+1)
+}
+
+nextVersionForMember = v{
+  #get all versions inbetween current and next
+  possVers = inbetween
+  n = next
+  # check if there is any service impacting upgrade in betwen current and next
+  vers := nextImpactingVersions(possVers)
+  # select either next version or a service impacting version inbetween
+  v := selectVersion(vers,n)
+}
+
+selectVersion(impacting, next) = vers{
+	count(impacting) > 0
+    vers := impacting[count(impacting)-1]
+}
+
+selectVersion(impacting, next) = vers{
+	count(impacting) == 0
+    vers := next
+}
+
+
+nextImpactingVersions(versions) = vers {
+	vers := [x |
+    some i
+    versions[i].serviceImpacting
+    x := versions[i]]
+
 }
 
 
