@@ -1,0 +1,14 @@
+{
+  "service":"someservice",
+  "serviceType":"saas",
+  "version":"3.6.1",
+  "next":[],
+  "serviceImpacting":false,
+  "criticalSecurityUpgrade":false,
+  "requirements":[
+    {"dependency":"strimzi:2.5.1"},
+    {"dependency":"observability:>=1.2.0"},
+    {"dependency":"platform:>=4.7.0"}
+  ],
+  "status":"active"
+}

@@ -1,0 +1,123 @@
+{
+  "input": {
+    "versions": [
+      {
+        "service": "someservice",
+        "serviceType": "saas",
+        "version": "3.4.0",
+        "next": [
+          "3.5.0"
+        ],
+        "serviceImpacting": false,
+        "criticalSecurityUpgrade": false,
+        "requirements": [
+          {
+            "dependency": "strimzi:>=2.5.1"
+          },
+          {
+            "dependency": "observability:>=1.2.0"
+          },
+          {
+            "dependency": "platform:>=4.6.10"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "service": "someservice",
+        "serviceType": "saas",
+        "version": "3.5.0",
+        "next": [
+          "3.6.1"
+        ],
+        "serviceImpacting": false,
+        "criticalSecurityUpgrade": false,
+        "requirements": [
+          {
+            "dependency": "strimzi:>=2.5.1"
+          },
+          {
+            "dependency": "observability:>=1.2.0"
+          },
+          {
+            "dependency": "platform:>=4.6.10"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "service": "someservice",
+        "serviceType": "saas",
+        "version": "3.6.0",
+        "next": [
+          "3.6.1"
+        ],
+        "serviceImpacting": false,
+        "criticalSecurityUpgrade": false,
+        "requirements": [
+          {
+            "dependency": "strimzi:>=2.5.1"
+          },
+          {
+            "dependency": "observability:>=1.2.0"
+          },
+          {
+            "dependency": "platform:>=4.6.10"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "service": "someservice",
+        "serviceType": "saas",
+        "version": "3.6.1",
+        "next": [],
+        "serviceImpacting": false,
+        "criticalSecurityUpgrade": false,
+        "requirements": [
+          {
+            "dependency": "strimzi:2.5.1"
+          },
+          {
+            "dependency": "observability:>=1.2.0"
+          },
+          {
+            "dependency": "platform:>=4.7.0"
+          }
+        ],
+        "status": "active"
+      }
+    ],
+    "fleetMember": {
+      "clusterID":"0",
+      "cloud":"aws",
+      "services":[
+        {
+          "name":"someservice",
+          "version":"3.5.0",
+          "subscription": "",
+          "risk": 7
+        },
+        {
+          "name":"strimzi",
+          "version":"2.6.1",
+          "subscription": "",
+          "risk": 7
+        },
+        {
+          "name":"observability",
+          "version":"1.2.1",
+          "subscription": "",
+          "risk": 7
+        },
+        {
+          "name":"platform",
+          "version":"4.7.10",
+          "subscription": "",
+          "risk": 7
+        }
+      ],
+      "upgradePolicy":"automatic"
+    }
+  }
+}

@@ -1,128 +1,138 @@
-[
- [
+{
+ "groups":[
   {
-   "clusterID": "1",
-   "risk": 7,
-   "services": [
+   "status":"",
+   "fleet_members":[
     {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
+     "clusterID":"1",
+     "risk":7,
+     "cloud":"aws",
+     "services":[
+      {
+       "name":"Kafka",
+       "version":"3.5.0"
+      },
+      {
+       "name":"strimzi",
+       "version":"2.5.0"
+      },
+      {
+       "name":"observability",
+       "version":"1.2.1"
+      },
+      {
+       "name":"platform",
+       "version":"4.7.10"
+      }
+     ],
+     "upgradePolicy":"automatic"
     }
-   ],
-   "upgradePolicy": "automatic"
+   ]
   },
   {
-   "clusterID": "3",
-   "risk": 7,
-   "services": [
+   "status":"",
+   "fleet_members":[
     {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
+     "clusterID":"2",
+     "risk":5,
+     "cloud":"aws",
+     "services":[
+      {
+       "name":"Kafka",
+       "version":"3.5.0"
+      },
+      {
+       "name":"strimzi",
+       "version":"2.5.0"
+      },
+      {
+       "name":"observability",
+       "version":"1.2.1"
+      },
+      {
+       "name":"platform",
+       "version":"4.7.10"
+      }
+     ],
+     "upgradePolicy":"automatic"
+    },
+    {
+     "clusterID":"3",
+     "risk":5,
+     "cloud":"aws",
+     "services":[
+      {
+       "name":"Kafka",
+       "version":"3.5.0"
+      },
+      {
+       "name":"strimzi",
+       "version":"2.5.0"
+      },
+      {
+       "name":"observability",
+       "version":"1.2.1"
+      },
+      {
+       "name":"platform",
+       "version":"4.7.10"
+      }
+     ],
+     "upgradePolicy":"automatic"
     }
-   ],
-   "upgradePolicy": "automatic"
+   ]
+  },
+  {
+   "status":"",
+   "fleet_members":[
+    {
+     "clusterID":"4",
+     "risk":4,
+     "cloud":"aws",
+     "services":[
+      {
+       "name":"Kafka",
+       "version":"3.5.0"
+      },
+      {
+       "name":"strimzi",
+       "version":"2.5.0"
+      },
+      {
+       "name":"observability",
+       "version":"1.2.1"
+      },
+      {
+       "name":"platform",
+       "version":"4.7.10"
+      }
+     ],
+     "upgradePolicy":"automatic"
+    }
+   ]
   }
  ],
- [
-  {
-   "clusterID": "1",
-   "risk": 7,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  },
-  {
-   "clusterID": "3",
-   "risk": 7,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  },
-  {
-   "clusterID": "6",
-   "risk": 6,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  },
-  {
-   "clusterID": "5",
-   "risk": 6,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  },
-  {
-   "clusterID": "10",
-   "risk": 5,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  },
-  {
-   "clusterID": "11",
-   "risk": 5,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  },
-  {
-   "clusterID": "9",
-   "risk": 5,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  }
- ],
- [
-  {
-   "clusterID": "1",
-   "risk": 7,
-   "services": [
-    {
-     "name": "RHOAM",
-     "version": "1.6.0",
-     "upgradeStatus": ""
-    }
-   ],
-   "upgradePolicy": "automatic"
-  }
- ]
-]
+ "version":{
+  "service":"Kafka",
+  "serviceType":"saas",
+  "version":"3.6.1",
+  "next":[
+
+  ],
+  "serviceImpacting":false,
+  "criticalSecurityUpgrade":false,
+  "requirements":[
+   {
+    "dependency":"strimzi:2.5.1"
+   },
+   {
+    "dependency":"observability:\u003e=1.2.0"
+   },
+   {
+    "dependency":"platform:\u003e=4.7.0"
+   }
+  ],
+  "status":"active"
+ },
+ "status":""
+}

@@ -1,0 +1,185 @@
+{
+  "input": {
+    "version": {
+      "service": "Kafka",
+      "serviceType": "saas",
+      "version": "3.6.1",
+      "next": [],
+      "serviceImpacting": false,
+      "criticalSecurityUpgrade": false,
+      "requirements": [
+        {
+          "dependency": "strimzi:2.5.1"
+        },
+        {
+          "dependency": "observability:\u003e=1.2.0"
+        },
+        {
+          "dependency": "platform:\u003e=4.7.0"
+        }
+      ],
+      "status": "active"
+    },
+    "fleet": {
+      "service": "Kafka",
+      "serviceType": "saas",
+      "members": [
+        {
+          "clusterID": "0",
+          "cloud": "aws",
+          "services": [
+            {
+              "name": "Kafka",
+              "version": "3.5.0",
+              "risk": 7,
+              "subscription": ""
+            },
+            {
+              "name": "strimzi",
+              "version": "2.6.1",
+              "risk": 7,
+              "subscription": ""
+            },
+            {
+              "name": "observability",
+              "version": "1.2.1",
+              "risk": 7,
+              "subscription": ""
+            },
+            {
+              "name": "platform",
+              "version": "4.7.10",
+              "risk": 7,
+              "subscription": ""
+            }
+          ],
+          "upgradePolicy": "automatic"
+        },
+        {
+          "clusterID": "0",
+          "cloud": "aws",
+          "services": [
+            {
+              "name": "Kafka",
+              "version": "3.5.0",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "strimzi",
+              "version": "2.5.0",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "observability",
+              "version": "1.2.1",
+              "risk": 7,
+              "subscription": ""
+            },
+            {
+              "name": "platform",
+              "version": "4.7.10",
+              "risk": 7,
+              "subscription": ""
+            }
+          ],
+          "upgradePolicy": "automatic"
+        },
+        {
+          "clusterID": "1",
+          "cloud": "aws",
+          "services": [
+            {
+              "name": "Kafka",
+              "version": "3.5.0",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "strimzi",
+              "version": "2.5.0",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "observability",
+              "version": "1.2.1",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "platform",
+              "version": "4.7.10",
+              "risk": 5,
+              "subscription": ""
+            }
+          ],
+          "upgradePolicy": "automatic"
+        },
+        {
+          "clusterID": "1",
+          "cloud": "aws",
+          "services": [
+            {
+              "name": "Kafka",
+              "version": "3.5.0",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "strimzi",
+              "version": "2.5.0",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "observability",
+              "version": "1.2.1",
+              "risk": 5,
+              "subscription": ""
+            },
+            {
+              "name": "platform",
+              "version": "4.7.10",
+              "risk": 5,
+              "subscription": ""
+            }
+          ],
+          "upgradePolicy": "automatic"
+        },
+        {
+          "clusterID": "1",
+          "cloud": "aws",
+          "services": [
+            {
+              "name": "Kafka",
+              "version": "3.5.0",
+              "risk": 4,
+              "subscription": ""
+            },
+            {
+              "name": "strimzi",
+              "version": "2.5.0",
+              "risk": 4,
+              "subscription": ""
+            },
+            {
+              "name": "observability",
+              "version": "1.2.1",
+              "risk": 4,
+              "subscription": ""
+            },
+            {
+              "name": "platform",
+              "version": "4.7.10",
+              "risk": 7,
+              "subscription": ""
+            }
+          ],
+          "upgradePolicy": "automatic"
+        }
+      ]
+    }
+  }
+}

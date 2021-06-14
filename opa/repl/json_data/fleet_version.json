@@ -1,0 +1,180 @@
+{
+  "input": {
+    "version": {
+      "service":"someservice",
+      "serviceType":"saas",
+      "version":"3.6.1",
+      "next":[],
+      "serviceImpacting":false,
+      "criticalSecurityUpgrade":false,
+      "requirements":[
+        {"dependency":"strimzi:2.5.1"},
+        {"dependency":"observability:>=1.2.0"},
+        {"dependency":"platform:>=4.7.0"}
+      ],
+      "status":"active"
+    },
+    "fleet": {
+      "service": "someservice",
+      "serviceType": "saas",
+      "members": [
+        {
+          "clusterID":"0",
+          "cloud":"aws",
+          "services":[
+            {
+              "name":"someservice",
+              "version":"3.5.0",
+              "subscription": "",
+              "risk": 7
+            },
+            {
+              "name":"strimzi",
+              "version":"2.6.1",
+              "subscription": "",
+              "risk": 7
+            },
+            {
+              "name":"observability",
+              "version":"1.2.1",
+              "subscription": "",
+              "risk": 7
+            },
+            {
+              "name":"platform",
+              "version":"4.7.10",
+              "subscription": "",
+              "risk": 7
+            }
+          ],
+          "upgradePolicy":"automatic"
+        },
+        {
+          "clusterID":"0",
+          "cloud":"aws",
+          "services":[
+            {
+              "name":"someservice",
+              "version":"3.5.0",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"strimzi",
+              "version":"2.5.0",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"observability",
+              "version":"1.2.1",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"platform",
+              "version":"4.7.10",
+              "subscription": "",
+              "risk": 7
+            }
+          ],
+          "upgradePolicy":"automatic"
+        },
+        {
+          "clusterID":"1",
+          "cloud":"aws",
+          "services":[
+            {
+              "id": "0",
+              "name":"someservice",
+              "version":"3.5.0",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"strimzi",
+              "version":"2.5.0",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"observability",
+              "version":"1.2.1",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"platform",
+              "version":"4.7.10",
+              "subscription": "",
+              "risk": 5
+            }
+          ],
+          "upgradePolicy":"automatic"
+        },
+        {
+          "clusterID":"1",
+          "cloud":"aws",
+          "services":[
+            {
+              "name":"someservice",
+              "version":"3.5.0",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"strimzi",
+              "version":"2.5.0",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"observability",
+              "version":"1.2.1",
+              "subscription": "",
+              "risk": 5
+            },
+            {
+              "name":"platform",
+              "version":"4.7.10",
+              "subscription": "",
+              "risk": 5
+            }
+          ],
+          "upgradePolicy":"automatic"
+        },
+        {
+          "clusterID":"1",
+          "cloud":"aws",
+          "services":[
+            {
+              "name":"someservice",
+              "version":"3.5.0",
+              "subscription": "",
+              "risk": 4
+            },
+            {
+              "name":"strimzi",
+              "version":"2.5.0",
+              "subscription": "",
+              "risk": 4
+            },
+            {
+              "name":"observability",
+              "version":"1.2.1",
+              "subscription": "",
+              "risk": 4
+            },
+            {
+              "name":"platform",
+              "version":"4.7.10",
+              "subscription": "",
+              "risk": 7
+            }
+          ],
+          "upgradePolicy":"automatic"
+        }
+      ]
+    }
+  }
+}

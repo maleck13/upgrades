@@ -1,0 +1,25 @@
+{
+  "clusterID": "0",
+  "risk": 7,
+  "cloud": "aws",
+  "services": [
+    {
+      "name": "Kafka",
+      "version": "3.5.0"
+    },
+    {
+      "name": "strimzi",
+      "version":"2.5.1"
+    },
+    {
+      "name":"observability",
+      "version":"1.2.1"
+    },
+    {
+      "name":"platform",
+      "version":"4.7.10"
+    }
+
+  ],
+  "upgradePolicy": "automatic"
+}

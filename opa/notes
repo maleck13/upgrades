@@ -1,0 +1,3 @@
+add version API that creates a rollout plan based on fleet eligible to be grouped for that version
+add available upgrades API that will return if your fleet member should be upgraded for a particular service
+add upgrade report API that will register success for failure for a fleet members upgrade
