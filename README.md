@@ -41,6 +41,11 @@ A rollout plan could be as simple as a single group with the entire fleet in it.
 Takes a fleet member and a version and decides if that fleet member is eligible to be upgraded at this point in time. This policy
 would be checked with data that is as upto date as possible, ideally in response to a "should I upgrade call". 
 
+### Version Selection Policy
+
+Takes a fleet member and a set of versions. Finds the next version for the fleet member. The next version is either the version in the next
+array or a version in between that is considered serviceImpacting
+
 
 ## Try It
 
@@ -74,10 +79,10 @@ Full Fleet and a Version [fleet and a version](opa/repl/json_data/fleet_version.
 Fleet Member and Version [fleet member and version](opa/repl/json_data/fleet_member_version.json) 
 
 
-- Find the next version for a fleet member. Executing from the root of this repo
+- Find the next version for a fleet member. Executing from the root of this repo. In this case we are checking for the next version but also checking for any impacting version between current and next
 
 `
-curl localhost:8181/v1/data/upgrade/someservice/availableVersionForFleetMember -d @./opa/repl/json_data/fleet_member_versions.json -H 'Content-Type: application/json' | jq`
+curl localhost:8181/v1/data/upgrade/someservice/nextVersionForMember -d @./opa/repl/json_data/fleet_member_versions.json -H 'Content-Type: application/json' | jq`
 `
 
 - Show the rollout plan for a fleet for a particular version
