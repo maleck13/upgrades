@@ -67,11 +67,11 @@ This will start a local server on port 8181
 
 Data Model:
 
-Fleet Member And Versions [fleet member and versions](./opa/repl/json_data/fleet_member_versions.json)
+Fleet Member And Versions [fleet member and versions](opa/repl/json_data/fleet_member_versions.json)
 
-Full Fleet and a Version [fleet and a version](./opa/repl/json_data/fleet_member_versions.json)
+Full Fleet and a Version [fleet and a version](opa/repl/json_data/fleet_member_versions.json)
 
-Fleet Member and Version [fleet member and version](./opa/repl/json_data/fleet_member_version.json) 
+Fleet Member and Version [fleet member and version](opa/repl/json_data/fleet_member_version.json) 
 
 
 - Find the next version for a fleet member. Executing from the root of this repo
